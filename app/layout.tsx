@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "Authentication for Next.js",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
