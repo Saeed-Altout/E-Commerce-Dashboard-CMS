@@ -41,3 +41,12 @@ model Account {
 
   @@unique([provider, providerAccountId])
 }
+
+model VerificationToken {
+  id      String   @id @default(uuid())
+  email   String   @db.VarChar(50)
+  token   String   @unique @db.VarChar(50)
+  expires DateTime
+
+  @@unique([email, token])
+}
