@@ -34,7 +34,6 @@ export const CardWrapper: React.FC<CardWrapperProps> = ({
       <CardContent>{children}</CardContent>
       <CardFooter className="flex-col space-y-5">
         {showSocial && <Social />}
-        <Separator />
         <BackButton label={backButtonLabel} href={backButtonHref} />
       </CardFooter>
     </Card>
