@@ -6,7 +6,7 @@ import * as z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-import { RegisterSchema } from "@/schemas/login-schema";
+import { RegisterSchema } from "@/schemas";
 import { CardWrapper } from "@/components/auth/card-wrapper";
 
 import { Input } from "@/components/ui/input";
