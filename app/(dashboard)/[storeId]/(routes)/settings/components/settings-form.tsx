@@ -25,6 +25,7 @@ import { toast } from "sonner";
 import axios from "axios";
 import { useParams, useRouter } from "next/navigation";
 import { AlertModal } from "@/components/modals/alert-modal";
+import { ApiList } from "@/components/ui/api-list";
 
 interface SettingsFormProps {
   initialData: Store;
@@ -122,6 +123,8 @@ export const SettingsForm = ({ initialData }: SettingsFormProps) => {
           </Button>
         </form>
       </Form>
+      <Separator />
+      <ApiList entityName="settings" entityIdName="" />
     </>
   );
 };
