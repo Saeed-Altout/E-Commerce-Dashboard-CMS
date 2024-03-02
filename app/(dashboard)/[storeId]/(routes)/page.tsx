@@ -11,5 +11,5 @@ export default async function DashboradPage({ params }: DashboradPageProps) {
     },
   });
 
-  return <div>Active store: {store.name}</div>;
+  return <div>Active store: {store?.name}</div>;
 }

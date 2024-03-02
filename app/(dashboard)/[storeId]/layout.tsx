@@ -1,3 +1,4 @@
+import { Navbar } from "@/components/navbar";
 import { currentUser } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { redirect } from "next/navigation";
@@ -26,7 +27,7 @@ export default async function DashboardLayout({
 
   return (
     <>
-      <div>Navbar</div>
+      <Navbar />
       {children}
     </>
   );
