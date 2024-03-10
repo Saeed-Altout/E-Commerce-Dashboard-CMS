@@ -3,12 +3,12 @@ import { db } from "@/lib/db";
 import { redirect } from "next/navigation";
 import { SettingsForm } from "./components/settings-form";
 
-interface SettingsProps {
+interface SettingsPageProps {
   params: {
     storeId: string;
   };
 }
-export default async function SettingsPage({ params }: SettingsProps) {
+export default async function SettingsPage({ params }: SettingsPageProps) {
   const user = await currentUser();
 
   if (!user?.id) {

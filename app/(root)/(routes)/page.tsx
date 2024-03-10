@@ -3,7 +3,6 @@
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 
-import { UserButton } from "@/components/auth/user-button";
 import { useStoreModal } from "@/hooks/use-store-modal";
 import { useEffect } from "react";
 
